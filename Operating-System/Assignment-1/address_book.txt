@@ -1,0 +1,20 @@
+Om Patil		Pune, 123 HighStreet		9045647899	ompatil@gmail.com
+Simbha		        Pune, 456 HillSide		8377399399	simbha@gmail.com
+Tom Hanks		Mumbai, 832 RiverSide		9287397820	tomhanks@gmail.com
+Chris Nolan		Dubai, 934  LakeView		9380276490	chisnolan@gmail.com
+Robert Greene       	London, 757 OceanView       	9834343483      robertgreen@gmail.com
+Peter Theil         	Florida, 456 BeachSide      	8943834343      petertheiel@gmai.com
+George Orwell       	London, 834 HillTop         	8490234342      george@gmail.com
+Napolean Hill       	Pune, 348 HighStreet        	9234832934      napolean@gmail.com
+Dale Carnegie       	Mumbai, 938 LakeView        	9234324384      dalec@gmail.com
+Marcus Aurelius     	Rome, 111 Castle            	9949324333      marcus@gmail.com
+Charles Schwab      	Texas, 837 HighStreet       	8934343434      charles@gmail.com
+Epictetus           	Rome, 343 RoadSide          	8948394343      epictetus@gmail.com
+Alan Turning        	London, 343 LakeView        	9348923042      alan@gmail.com
+Marie Curie         	London, 348 RiveSide        	9394394443      marie@gmail.com
+Nikola Tesla       	New York, 555 HillTop       	9248394343      tesla@gmail.com
+Michael Faraday     	New York, 453 LakeView      	9234389433      faraday@gmail.com
+Thomad Edison       	New York, 768 HighStreet    	9234907097      edison@gmail.com
+Isaac Newton        	London, 344 TreeTop         	9234893434      newton@gmail.com
+Galilio Galilie     	Italy, 734 HighStreet       	9343984343      galileo2gmail.com
+Charels Darwin      	London, 343 HighStreet      	9343948343      darwin@gmail.com
