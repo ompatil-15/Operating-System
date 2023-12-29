@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles-login.css">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assests/icon.png">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div class="console">
+        <div class="name">
+            <img class='logo' src="./assests/icon.png">
+            <h1 class="socialboard">SocialBoard</h1>
+        </div>
+        
+        <p class="sign-in"><span class="signin">Sign in</span><br><span class="continue">to continue using SocialBoard</span></p>
+
+        <form class="credentials" onsubmit="return validate_credentials()">
+            <label for="username"></label>
+            <input id="username" class="username input" type="text" placeholder="Username" required></input>
+            <label for="password"></label>
+            <input id="password" class="password input" type="password" placeholder="Password" required></input>
+            <button class="next" type="submit">Next</button>
+        </form>    
+
+        <div class="method">
+            <a class="create-act" href="./signup.html">Create account</a>
+            <a  class="forgot-password" href="./forgot-password.html">Forgot password?</a>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
