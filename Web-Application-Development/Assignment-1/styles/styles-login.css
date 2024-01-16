@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Avenir';
-    src: url('Avenir.otf') format('opentype');
+    src: url('../assests/font/Avenir.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Avenir Bold';
-    src: url('Avenir-Bold.otf') format('opentype');
+    src: url('../assests/font/Avenir-Bold.otf') format('opentype');
 }
 
 body {

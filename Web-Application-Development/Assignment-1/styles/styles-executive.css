@@ -1,0 +1,243 @@
+
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../assests/font/Avenir.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Bold';
+    src: url('../assests/font/Avenir-Bold.otf') format('opentype');
+}
+
+body {
+    font-family: Avenir;
+    padding: 0;
+    background-color: #16113a;
+    width: 97vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+p,div {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.card {
+    color: #d4d1d1;
+    font-family: Avenir;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    min-width: 250px;
+}
+
+.card2{
+    /* grid-area: two; */
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+/* .card1{
+    grid-area: one;
+}
+
+.card3{
+    grid-area: three;
+}
+.card4{
+    grid-area: four;
+}
+.card5{
+    grid-area: five;
+} */
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 4fr 4fr 3fr;
+    grid-template-rows: 4fr 3fr;
+    /* grid-template-areas:
+    'one two three'
+    'one two three'
+    'four two five'; */
+}
+
+@media (max-width: 1000px) {
+    .dashboard {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    }
+    body {
+        overflow: scroll;
+    }
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+
+.logo {
+    height: 1.75rem;
+    width: 1.75rem;
+    padding-left: 10px;
+}
+
+.tag {
+    font-size: 0.75rem;
+    color: grey;
+    margin-top: 0.25rem;
+}
+
+.time {
+    font-family: Avenir Bold;
+    margin-right: -10px;
+    margin-left: auto;    
+    font-size: 1.25rem;
+    
+}
+
+.example {
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.daily-signups {
+    /* border: 1px solid white; */
+    height: 95%;
+}
+
+.signups-chart {
+    width: 100%;
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+    height: auto;
+    margin: auto;
+}
+
+.signups1 {
+    margin: 0.45rem 0 0.25rem;
+}
+
+.delta {
+    color: 'black'; 
+}
+
+.count1 {
+    /* margin-top: 0.35rem; */
+    font-family: 'Avenir Bold';
+    font-size: 2.5rem;
+}
+
+.profit-margin {
+    /* border: 1px solid white; */
+    height: 95%;
+}
+
+.mrr {
+    /* border: 1px solid white; */
+    height: 95%;
+}
+
+.mrr1 {
+    margin-top: 2rem;   
+    font-family: 'Avenir Bold';
+    font-size: 4rem;
+}
+
+.time2, .tag2 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.mrr2 {
+    margin-top: 2rem;
+}
+
+table {
+    /* border: 1px solid white; */
+    padding: 0;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 0.8rem;
+    border-spacing: 0.6rem;
+}
+
+
+th, td {
+    text-align: start;
+}
+
+th:nth-child(1) {
+    width: 60%;
+}
+
+th:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3) {
+    width: 10%;
+}
+
+.cust-spt {
+    height: 95%;
+}
+
+.cs-feedback {
+    height: 95%;
+}
+
+.like {
+    width: 2rem;
+    height: 2rem;
+}
+
+.feedbacks {
+    margin-top: 1rem;
+}
+.feedback {
+    padding: 0.4rem 0;
+    display: flex;
+    padding-left: 1%;
+    align-items: center;
+
+}
+.response {
+    font-size: 0.8rem;
+    margin-left: 2rem;  
+    padding: 0.2rem 0;
+}
+
+hr {
+    background-color: #d4d1d1;
+    size: 0.5px;
+}
+
+.time3 {
+    font-family: 'Avenir Bold';
+    font-size: 2.5rem;
+}
+
+.csat3 {
+    margin-top: 1rem;
+}

@@ -3,36 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles-executive.css">
-    <script src="script.js"></script>
-    <link rel="icon" type="image/x-icon" href="./assests/icon.png">
+    <link rel="stylesheet" href="./styles/styles-executive.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assests/images/icon.png">
     <title>Executive Dashboard</title>
 </head>
 <body>
 
     <div class="dashboard">
+
         <div class="card card1">
-            <p class="title">Signups</p>
+            <div class="daily-signups">
+                <p class="title">Signups</p>
+                <p class="signups1">Daily Signups</p>
+                <div class="signups-chart"></div>
+                <p class="count1">3,775</p>
+                <p class="time1">last 28 days</p>
+                <p class="tag1"><span style="color: rgb(18, 226, 18)">&#9650 337</span> v/s prev 28 days</p>
+            </div>      
         </div>
+
         <div class="card card2">
-            <p class="title">MRR</p></div>
+            <div class="mrr">
+            <p class="title">MRR</p>
+            <p class="mrr1">₹512.7K</p>
+            <p class="time2">Current MRR</p>
+            <p class="tag2"><span style="color: rgb(18, 226, 18)">&#9650 ₹5.8K</span> vs last month</p>
+            <p class="mrr2">Current MRR changes</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Plan</th>
+                        <th>&#916;MRR</th>
+                    </tr>
+                    <tr>
+                        <td>SwiftTech Solutions</td>
+                        <td>Team</td>
+                        <td>-₹85K</td>
+                    </tr>
+                    <tr>
+                        <td>Pinnacle Consulting Group</td>
+                        <td>Team+</td>
+                        <td>₹67K</td>
+                    </tr>
+                    <tr>
+                        <td>MetroServe Solutions</td>
+                        <td>Company</td>
+                        <td>₹157K</td>
+                    </tr>
+                    <tr>
+                        <td>Horizon Marketing</td>
+                        <td>Basic</td>
+                        <td>₹50K</td>
+                    </tr>
+                    <tr>
+                        <td>Quantum IT Solutions</td>
+                        <td>Team+</td>
+                        <td>₹35K</td>
+                    </tr>
+                    <tr>
+                        <td>Elite Event Management</td>
+                        <td>Company</td>
+                        <td>₹223K</td>
+                    </tr>
+                    <tr>
+                        <td>Apex Financial Advisors</td>
+                        <td>Team</td>
+                        <td>-₹88K</td>
+                    </tr>
+                    <tr>
+                        <td>Stellar Design Studios</td>
+                        <td>Company</td>
+                        <td>₹235K</td>
+                    </tr>
+                    <tr>
+                        <td>Zenith Health Services</td>
+                        <td>Team</td>
+                        <td>-₹55K</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic Logistics Solutions</td>
+                        <td>Team</td>
+                        <td>₹67K</td>
+                    </tr>
+                </thead>
+            </table>
+            </div>
+        </div>
+
         <div class="card card3">
-            <p class="title">Customer support</p></div>
+            <div class="cust-spt">
+            <p class="title">Customer support</p>
+            <p class="csat3">CSAT</p>
+            <div id="csat-chart"></div>
+            <p class="time3">198min</p>
+            <p class="tag3">First reply time</p>
+            <p class="rate"><span style="color: rgb(18, 226, 18)">&#9650 16%</span></p>
+            </div>
+        </div>
+
         <div class="card card4">
-            <p class="title">Widget added</p></div>
+            <div class="profit-margin">
+            <p class="title">Profit Margins</p>
+            <div class="profit-chart"></div>
+
+            </div>         
+        </div>
+
         <div class="card card5">
-            <p class="title">Recent CS Feeback</p></div>
+            <div class="cs-feedback">
+            <p class="title">Recent CS Feeback</p>
+            <div class="feedbacks">
+                <div class="feedback">
+                    <img class="like" src="./assests/images/like.png" alt="reaction">
+                    <div class="response">
+                        <p>Great Job!!!</p>
+                        <p>27 mins ago</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="feedback">
+                    <img class="like" src="./assests/images/like.png" alt="reaction">
+                    <div class="response">
+                        <p>Excellent Effort</p>
+                        <p>32 mins ago</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="feedback">
+                    <img class="like" src="./assests/images/like.png" alt="reaction">
+                    <div class="response">
+                        <p>Timely Updates</p>
+                        <p>35 mins ago</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
     </div>
 
     <div class="footer">
-        <img class="logo" src="./assests/icon.png">
+        <img class="logo" src="./assests/images/icon.png">
         <div class="example">Executive Dashboard</div>
         <div class="tag">Powered by SocialBoard</div>
         <div id="time" class="time"></div>
     </div>
     
 
-    
+    <script src="./scripts/script.js"></script>
+
 </body>
 </html>
 
