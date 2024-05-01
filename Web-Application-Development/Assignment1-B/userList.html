@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+    <script>
+        // Function to display user list
+        function displayUserList() {
+            // Check if local storage is available
+            if (typeof(Storage) !== "undefined") {
+                // Retrieve user data from local storage
+                var users = JSON.parse(localStorage.getItem("users")) || [];
+                
+                // Get the <ul> element where the user list will be displayed
+                var userList = document.getElementById("userList");
+                
+                // Clear any existing content in the list
+                userList.innerHTML = "";
+                
+                // Loop through each user and create list items to display their information
+                users.forEach(function(user) {
+                    var listItem = document.createElement("li");
+                    listItem.textContent = "Name: " + user.name + ", Email: " + user.email + ", Phone: " + user.phone;
+                    userList.appendChild(listItem);
+                });
+            } else {
+                alert("Local storage is not supported by your browser. User data cannot be retrieved.");
+            }
+        }
+    </script>
+</head>
+<body onload="displayUserList()">
+    <h2>User List</h2>
+    <ul id="userList"></ul>
+</body>
+</html>

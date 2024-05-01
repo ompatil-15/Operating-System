@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <script>
+        // Function to handle form submission
+        function registerUser() {
+            // Get form inputs
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            
+            // Create user object
+            var user = {
+                name: name,
+                email: email,
+                phone: phone
+            };
+            
+            // Check if local storage is available
+            if (typeof(Storage) !== "undefined") {
+                // Retrieve existing user data from local storage
+                var users = JSON.parse(localStorage.getItem("users")) || [];
+                
+                // Add new user to the array
+                users.push(user);
+                
+                // Save updated user data back to local storage
+                localStorage.setItem("users", JSON.stringify(users));
+                
+                // Redirect to the new page to display user list
+                window.location.href = "userlist.html";
+            } else {
+                alert("Local storage is not supported by your browser. User data cannot be saved.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+        <button type="button" onclick="registerUser()">Register</button>
+    </form>
+</body>
+</html>
