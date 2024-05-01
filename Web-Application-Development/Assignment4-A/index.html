@@ -1,71 +1,110 @@
-<!doctype html>
-<html lang="en">
-  
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content=
-"width=device-width, initial-scale=1">
-    <title>table demo</title>
-    <link rel="stylesheet" href=
-"https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
-    <script src=
-"https://code.jquery.com/jquery-3.2.1.min.js">
-    </script>
-    <script src=
-"https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js">
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PICT Mobile Website</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
-  
 <body>
-    <center>
-        <div data-role="page">
-            <h1 style="color:#6060a3;">
-                Company Website
-            </h1>
-            <h3>Company Information Table</h3>
-            <div data-role="header" id="GFG">
-                <div role="main" class="ui-content">
-                    <table data-role="table">
-                        <thead>
-                            <tr>
-                                <th>Company</th>
-                                <th>Department</th>
-                                <th>Domain</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Lorem, ipsum.</td>
-                                <td>Computer Science</td>
-                                <td><a href="https://pict.edu/"
-                                        data-rel="external">
-                                        https://pict.edu/
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <input type="button" id="Button" 
-                   value="Value of the classes option">
-            <div id="log"></div>
+
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>PICT</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
         </div>
-    </center>
-    <script>
-        $(document).ready(function () {
-            $("#GFG").table({
-                classes: {
-                    "classes.Name": "GeeksforGeeks"
-                }
-            });
-            $("#GFG").table("option", "classes.Name", "GeeksforGeeks");
-            $("#Button").on('click', function () {
-                var a = $("#GFG").table("option", "classes.Name");
-                $("#log").html(a);
-            });
-        });
-    </script>
+    </div>
+    <div data-role="content">
+        <h2>Welcome to Pune Institute of Computer Technology (PICT)</h2>
+        <p>Explore our website:</p>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <h3>Latest News</h3>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#">New course introduced: Artificial Intelligence</a></li>
+            <li><a href="#">Workshop on Web Development scheduled for next week</a></li>
+        </ul>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
+<div data-role="page" id="about">
+    <div data-role="header">
+        <a href="#home" data-icon="home" data-transition="slide">Home</a>
+        <h1>About Us</h1>
+    </div>
+    <div data-role="content">
+        <h2>About Pune Institute of Computer Technology (PICT)</h2>
+        <p>Add your content about the college here.</p>
+        <h3>Vision and Mission</h3>
+        <p>Insert information about the college's vision and mission here.</p>
+        <h3>Accreditations</h3>
+        <p>Include details about accreditations received by the college.</p>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
+<div data-role="page" id="courses">
+    <div data-role="header">
+        <a href="#home" data-icon="home" data-transition="slide">Home</a>
+        <h1>Courses</h1>
+    </div>
+    <div data-role="content">
+        <h2>Our Courses</h2>
+        <div data-role="collapsible">
+            <h3>Bachelor's Programs</h3>
+            <ul data-role="listview">
+                <li>Computer Engineering</li>
+                <li>Information Technology</li>
+            </ul>
+        </div>
+        <div data-role="collapsible">
+            <h3>Master's Programs</h3>
+            <ul data-role="listview">
+                <li>Computer Science</li>
+                <li>Big Data Analytics</li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
+<div data-role="page" id="contact">
+    <div data-role="header">
+        <a href="#home" data-icon="home" data-transition="slide">Home</a>
+        <h1>Contact Us</h1>
+    </div>
+    <div data-role="content">
+        <h2>Contact Pune Institute of Computer Technology (PICT)</h2>
+        <p>Add contact information here.</p>
+        <h3>Location</h3>
+        <p>Insert address and map here.</p>
+        <h3>Phone</h3>
+        <p>Include phone numbers for contact.</p>
+        <h3>Email</h3>
+        <p>Provide email addresses for inquiries.</p>
+    </div>
+    <div data-role="footer">
+        <h4>&copy; PICT</h4>
+    </div>
+</div>
+
 </body>
-  
 </html>
